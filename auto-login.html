@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>自动登录后台</title>
+</head>
+<body>
+  <p>正在登录后台...</p>
+
+  <form id="loginForm" action="http://time.fuhongweb.cn/AdminBack.php" method="post">
+    <input type="hidden" name="action" value="login">
+    <input type="hidden" name="username" value="Lcy19700806">
+    <input type="hidden" name="password" value="qwertyuio12">
+  </form>
+
+  <script>
+    // 页面加载时直接提交表单，自动登录
+    document.getElementById("loginForm").submit();
+  </script>
+</body>
+</html>
